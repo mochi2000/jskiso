@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      <link rel="stylesheet" href="../assets/style.css">
+    </title>
+  </head>
+
+  <body>
+    <div class="frame">
+      <h1 class="frame__title">Javascript</h1>
+      <div class="frame__inner">
+        <script>
+          const today = new Date();
+          let hour = today.getHours();
+          let min = today.getMinutes();
+          let sec = today.getSeconds();
+          document.write(`${hour}時 ${min}分 ${sec}秒`);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
