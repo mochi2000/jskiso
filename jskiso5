@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+
+  <body>
+    <div class="frame">
+      <h1 class="frame__title">Javascript</h1>
+      <div class="frame__inner">
+        <script>
+          let answer = prompt('1から10までの個数を入力してください')
+          if (answer >= 1) {
+            document.write('正しく入力されました');
+          } else {
+            document.write('1から10の間で入力してください');
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
