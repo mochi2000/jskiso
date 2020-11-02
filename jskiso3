@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      <link rel="stylesheet" href="../assets/style.css">
+    </title>
+  </head>
+
+  <body>
+    <div class="frame">
+      <h1 class="frame__title">Javascript</h1>
+      <div class="frame__inner">
+        <div id="time">10</div>
+        <script>
+          let display = document.getElementById("time");
+          display.innerHTML = '10時23分46秒';
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
