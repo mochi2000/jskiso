@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      <link rel="stylesheet" href="../assets/style.css">
+    </title>
+  </head>
+
+  <body>
+    <div class="frame">
+      <h1 class="frame__title">Javascript</h1>
+      <div class="frame__inner">
+        <script>
+          const today = new Date();
+          document.write(today.getSeconds());
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
