@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <div class="frame">
+      <h1 class="frame__title">Javascript</h1>
+      <div class="frame__inner">
+        <script>
+        const words = '吾輩は猫である';
+
+        let key = prompt('検索したい文字を入れてください');
+        let pos = words.indexOf(key);
+        //document.write(pos);
+
+        if(pos >= 0) {
+          document.write(`<p>${words}</p>`);
+          document.write(`<p>${key}は${pos}文字目に見つかりました</p>`);
+        } else {
+          document.write('見つかりませんでした');
+        }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
