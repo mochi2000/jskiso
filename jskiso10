@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <div class="frame">
+      <h1 class="frame__title">Javascript</h1>
+      <div class="frame__inner">
+        <script>
+         const words = {
+           'Apple':'りんご',
+           'Orange':'オレンジ',
+           'Grapes':'グレープ'
+         }
+         let q = prompt('英単語を「入力してください')
+         if (words[q]) {
+         document.write(`${q}の日本語は${words[q]}です`);
+         } else {
+           document.write('その単語は登録されていません');
+         }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
