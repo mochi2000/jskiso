@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <div class="frame">
+      <h1 class="frame__title">Javascript</h1>
+      <div class="frame__inner">
+        <script>
+          const q1 = Math.floor(Math.random() * 10);
+          const q2 = Math.floor(Math.random() * 10);
+          let answer = parseInt(prompt(`${q1}+${q2}=?`));
+          
+          if (q1+q2 === answer) {
+            alert('正解です');
+            document.write(`正解は${q1+q2}です`);
+          } else {
+            alert('はずれ');
+            document.write(`正解は${q1+q2}です`);
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
