@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <div class="frame">
+      <h1 class="frame__title">Javascript</h1>
+      <div class="frame__inner">
+        <script>
+          let num = parseInt(prompt('数字を入力してください'))
+
+          if (Number.isFinite(num) && num % 2 === 0) {
+            document.write('偶数です');
+          } else {
+            document.write('奇数です');
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
