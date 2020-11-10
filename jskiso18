@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <div class="frame">
+      <h1 class="frame__title">Javascript</h1>
+      <div class="frame__inner">
+        <script>
+          class Item {
+            constructor(price){
+              //引数が消えてしまうのでプロパティとして定義しておく
+              this.price = price;
+            }
+
+            getTax() {
+              return Math.round(this.price*(10/100));
+            }
+          }
+
+          const price =parseInt(prompt('商品の価格を入力してください'));
+          let item = new Item(price);
+          document.write(`商品の消費税は${item.getTax()}円です`);
+          
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
