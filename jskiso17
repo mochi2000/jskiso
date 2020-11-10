@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <div class="frame">
+      <h1 class="frame__title">Javascript</h1>
+      <div class="frame__inner">
+        <script>
+          for (let i = 0; i<10; i++) {
+            document.write(i);
+          }
+          alert(i)
+          //letはスコープの範囲が狭いのでfor文内でしか変数が定義できていない
+
+          for (var i = 0; i<10; i++) {
+            document.write(i);
+          }
+          alert(i)
+          //varはスコープの範囲が広いのでfor文外でも変数を使う事ができる
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
