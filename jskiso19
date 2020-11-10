@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <div class="frame">
+      <h1 class="frame__title">Javascript</h1>
+      <div class="frame__inner">
+        <script>
+          // class Calc {
+          //   static sum(num1,num2) {
+          //     return num1 + num2;
+          //   }
+          // }
+
+          // document.write(Calc.sum(50,1));
+          
+          class Item {
+            constructor(tax) {
+              if(isFinite(tax)) {
+                this._tax = tax;
+              } else {
+                this._tax = 0;
+              }
+            }
+
+            set tax(tax) {
+              if(isFinite(tax)) {
+                this._tax = tax;
+              } else {
+                this._tax = 0;
+              }
+            }
+
+            get tax() {
+              return this._tax + '%';
+            }
+          }
+
+
+
+          let item = new Item(10);
+          document.write(item.tax);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
