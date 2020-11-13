@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <div class="frame">
+      <h1 class="frame__title">Javascript</h1>
+      <div class="frame__inner">
+        <p id="answer"></div>
+        <script type="module">
+          import { sum } from './module.js';
+
+          let answer = sum(10,2);
+          document.getElementById('answer').innerHTML = answer; 
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
