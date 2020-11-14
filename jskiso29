@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <div class="frame">
+      <h1 class="frame__title">Javascript</h1>
+      <div class="frame__inner">
+        <div id="output"></div>
+        <script>
+          const url = 'location.json';
+
+          const getLocations = () => {
+            return new Promise(function (resolve) {
+              let xhr = new XMLHttpRequest();
+              xhr.open('GET',url);
+              xhr.send();
+
+              xhr.onreadystatechange = () => {
+                if(xhr.readyState === 4 && xhr.status === 200){
+                  let result = JSON.parse(xhr.responseText);
+                  resolve(result);
+                }
+              }
+            })
+          }
+
+          getLocations().then(function(location) {
+            let html ='';
+            for (let i=0; i<location.length; i++){
+              html += location[i].name + '/' + location[i].address + '<br>';
+            }
+            document.getElementById('output').innerHTML = html;
+          });
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
